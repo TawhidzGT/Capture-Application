@@ -35,13 +35,13 @@
 
     <TextView
         android:id="@+id/caption_result"
-        android:layout_width="206dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="185dp"
-        android:layout_marginTop="270dp"
-        android:layout_marginEnd="185dp"
-        android:layout_marginBottom="45dp"
-        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        tools:text="TextView"
+        android:textSize="16sp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/camera_capture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,7 +67,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/camera_capture"
         android:layout_marginTop="16dp"
         android:visibility="gone" />
 </androidx.constraintlayout.widget.ConstraintLayout>
